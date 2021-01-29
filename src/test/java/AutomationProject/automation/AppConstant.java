@@ -3,6 +3,7 @@ package AutomationProject.automation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
@@ -20,7 +21,7 @@ public class AppConstant {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 	}
-	@AfterSuite
+	@BeforeSuite
 	public void closedriver() {
 		driver.close();
 	}
