@@ -24,7 +24,6 @@ public class USermgmtTest extends AppConstant {
 	public void selectuserrole() throws InterruptedException{
 		UsermgmtClass uc = PageFactory.initElements(driver, UsermgmtClass.class);
 		uc.selectuserrole();
-		Thread.sleep(5000);
 	}
 
 }
