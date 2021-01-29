@@ -20,7 +20,7 @@ public class AppConstant {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 	}
-	@AfterSuite
+	
 	public void closedriver() {
 		driver.close();
 	}
