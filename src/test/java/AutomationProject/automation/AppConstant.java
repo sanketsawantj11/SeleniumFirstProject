@@ -12,7 +12,7 @@ public class AppConstant {
 	
 	public static WebDriver driver=null;
 	
-	@BeforeTest
+	@BeforeSuite
 	public void initializedriver() {
 		ChromeDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class AppConstant {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 	}
-	@BeforeSuite
+	@AfterSuite
 	public void closedriver() {
 		driver.close();
 	}
